@@ -1,0 +1,135 @@
+{
+    "error": {
+        "noresp": "Sense resposta del servidor",
+        "invalidusrpwd": "Usuari / contrasenya invàlida",
+        "missingusrpwd": "Falta usuari / contrasenya",
+        "loginfailed": "Inici de sessió fallit",
+        "invalidentry": "Entrada invàlida",
+        "usrtaken": "Usuari ja registrat",
+        "regfail": "Error al registrar-se"
+    },
+    "main": {
+        "title": "Akcessum",
+        "head": "Welcome to accessvm",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta tortor ut justo auctor, nec ullamcorper sem imperdiet. Phasellus in leo vulputate, rutrum elit quis, luctus metus. Maecenas rhoncus justo justo, vitae sagittis arcu semper ut. Proin nisl diam, ultrices vitae ultrices ut, molestie non diam. Maecenas cursus lectus nec massa semper pulvinar eget vel elit. Quisque sit amet dolor quis nibh molestie laoreet ac eu magna. Praesent eget interdum metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+    },
+    "navbar": {
+        "login": "Iniciar sessió",
+        "register": "Registrar-se"
+    },
+    "login": {
+        "title": "Inicia sessió",
+        "id": "NIF / NIE",
+        "password": "Contrasenya",
+        "forgotpwd": "Contrasenya oblidada?",
+        "showpwd": "Mostrar contrasenya",
+        "trustdev": "Mantenir sessió activa",
+        "button": "Iniciar sessió"
+    },
+    "register": {
+        "title": "Registra't",
+        "name": "Nom complet",
+        "id":  [
+            "NIF / NIE",
+            "El teu NIF / NIE ha de contenir entre 7 o 8 números.",
+            "Han de començar o acabar amb majúscules.",
+            "Jocs de caràcters no permesos."
+        ],
+        "gender": [
+            "Gènere",
+            "Escull el teu gènere",
+            "Home",
+            "Dona",
+            "Altre"
+        ],
+        "born": "Data de naixement",
+        "street": "Carrer",
+        "city": "Ciutat",
+        "country": [
+            "País",
+            "Escull el teu país"
+        ],
+        "zip": "Codi postal",
+        "password": [
+            "Contrasenya",
+            "8 a 64 caràcters.",
+            "Ha d'incloure lletres majúscules i minúscules, un número y un caràcter especial.",
+            "Caràcters especials permesos: ! @ # $ % *"
+        ],
+        "confpwd": [
+            "Confirma la teva contrasenya",
+            "Les contrasenyes han de coincidir"
+        ],
+        "alreadyreg": "Ja registrat?",
+        "button": "Registar"
+    },
+    "home": {
+        "title": "Inici",
+        "head": "Benvingut",
+        "body": "Ens alegra tornar-te a veure"
+    },
+    "settings": {
+        "title": "Configuració",
+        "head": "Configuració",
+        "data": "Dades d'usuari",
+        "username": "Usuari",
+        "language": "Idioma",
+        "delacc": "Eliminar compte",
+        "warndelacc": "Estàs segur de que vols eliminar aquest compte? Aquesta acció és irreversible!"
+    },
+    "conditions": {
+        "yes": "Sí",
+        "no": "No",
+        "agree": "Estic d'acord"
+    },
+    "sidebar": {
+        "home": "Inici",
+        "profile": "Perfil",
+        "settings": "Configuració",
+        "logout": "Tancar sessió",
+        "schedule": "Horari",
+        "editor": "Editor",
+        "admin": "Administrador"
+    },
+    "user": {
+        "title": "Perfil de %s",
+        "mod": "Modalitat sense assignar",
+        "about": "Sobre",
+        "skills": "Habilitats",
+        "emptyskills": "Sense habilitats que mostrar",
+        "sm": "Xarxes sociales"
+    },
+    "unauth": {
+        "title": "Accés denegat",
+        "head": "Prohibit",
+        "body": "No tens accés per a entrar en aquest lloc",
+        "button": "Tornar enrere"
+    },
+    "notfound": {
+        "title": "No disponible",
+        "head": "No trobat",
+        "body": "No es pot accedir en aquesta ruta",
+        "button": "Tornar a l'inici"
+    },
+    "admin": {
+        "title": "Administrador", 
+        "head": "Administrador",
+        "users": "Usuaris"
+    },
+    "editor": {
+        "title": "Editor", 
+        "head": "Editor",
+        "body": "Has de tindre el rol d'editor"
+    },
+    "schedule": {
+        "title": "Horari",
+        "head": "Horari",
+        "body": "Benvinguts a l'horari"
+    },
+    "success": {
+        "title": "Creada exitosament",
+        "head": "El teu compte ha sigut creat exitosament!",
+        "closingIn": "Tancant en",
+        "link": "Regístra't"
+    }
+}

@@ -1,0 +1,205 @@
+.sidebar
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    position: fixed
+    z-index: 3
+    right: 0
+    overflow-y: auto
+    overflow-x: hidden
+    border-radius: 10px
+    height: 100vh
+    background-color: rgba(255, 255, 255)
+
+.navigation
+    width: 80px
+    display: flex
+    flex-direction: column
+    transition: .5s
+    pointer-events: fill
+
+    &.active
+        width: 300px
+
+
+    & .menu_toggle
+        position: relative
+        width: 80px
+        height: 70px
+        display: flex
+        align-items: center
+        cursor: pointer
+        padding: 0 20px
+        width: 100%
+
+
+    & .menu_toggle::before
+        content: ''
+        position: absolute
+        width: 35px
+        height: 2px
+        background-color: #333
+        transform: translateY(-10px)
+        transition: .5s
+
+
+    & .menu_toggle::after
+        content: ''
+        position: absolute
+        width: 35px
+        height: 2px
+        background-color: #333
+        transform: translateY(10px)
+        transition: .5s
+        box-shadow: 0 -10px #333
+
+
+    &.active .menu_toggle::before
+        transform: translateY(0) rotate(45deg)
+        background-color: tomato
+
+
+    &.active .menu_toggle::after
+        transform: translateY(0) rotate(-45deg)
+        box-shadow: 0 0
+        background-color: tomato
+
+
+    & .profile
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 10px 0
+        padding: 0 10px
+        width: 100%
+
+
+    & .profile .imgBx
+        position: relative
+        width: 60px
+        height: 60px
+        overflow: hidden
+        transition: .5s
+        border-radius: 50%
+        background-color: #fff
+
+    &.active .profile .imgBx
+        width: 100px
+        height: 100px
+
+
+    & .profile .imgBx img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        background-color: #fff
+        background-position: 100% 0
+        transition: background-position .5s
+
+
+    & .menu
+        position: relative
+        width: 100%
+        padding: 10px
+        transition: .5s
+
+
+    &.active .menu
+        padding: 10px 20px
+
+
+    & .menu li
+        list-style: none
+
+
+    & .menu li a
+        position: relative
+        display: flex
+        text-decoration: none
+        color: #333
+        border-radius: 10px
+
+
+    & .menu li a:hover
+        background: var(--bs-primary)
+        color: #fff
+
+
+    & .menu li a .icon
+        position: relative
+        min-width: 60px
+        height: 60px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.2em
+
+
+    & .menu li a .text
+        position: relative
+        height: 60px
+        margin-left: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.125em
+
+.navigation .menu li #admin
+    color: #ff6961
+    text-shadow: rgba(255, 105, 97, 0.5) 2px 2px 10px
+
+
+    &:hover
+        background: #ff6961
+        color: #fff
+
+.navigation .menu li #editor
+    color: #61ff69
+    text-shadow: rgba(97, 255, 105, 0.5) 2px 2px 10px
+
+
+    &:hover
+        background: #61ff69
+        color: #fff
+
+.navigation .menu li #schedule
+    color: #61a8ff
+    text-shadow: rgba(97, 168, 255, 0.5) 2px 2px 10px
+
+
+    &:hover
+        background: #61a8ff
+        color: #fff
+
+.navigation .menu li #admin,
+.navigation .menu li #editor,
+.navigation .menu li #schedule
+    font-weight: bold
+
+.box20px
+    width: 100%
+    padding-top: 20px
+    padding-left: 20px
+    padding-right: 20px
+
+.navigation.active > .box20px > .userdata
+    display: block
+    width: 100%
+    border-top: 1px solid rgba(0, 0, 0, 0.15)
+
+.navigation > .box20px > .userdata
+    display: none
+
+.userdata
+    padding-top: 10px
+    padding-bottom: 10px
+
+.myborder
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+
+.modal-content
+    word-break: break-all
