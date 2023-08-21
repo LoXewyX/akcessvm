@@ -1,27 +1,33 @@
-# React + TypeScript + Vite
+# React Protected Routes with Role-Based Authorization (Modified Version)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is inspired by the work of [@DaveGrayTeachesCode](https://github.com/DaveGrayTeachesCode) on React Protected Routes and Role-Based Authorization. The original implementation can be found in [this tutorial video](https://www.youtube.com/watch?v=oUZjO00NkhY).
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This version of the project extends the original codebase to include TypeScript migration and version migration to React v18. It is intended for educational purposes and is **not for commercial use or resale**.
 
-## Expanding the ESLint configuration
+## Credits
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Original Implementation: [@DaveGrayTeachesCode](https://github.com/DaveGrayTeachesCode)
+- Source Tutorial: [YouTube Tutorial](https://www.youtube.com/watch?v=oUZjO00NkhY)
 
-- Configure the top-level `parserOptions` property like this:
+## Purpose
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+The primary aim of this project is educational. By building upon the original work, we explore TypeScript integration and compatibility with React v18. This project serves as a learning exercise and should not be used for any commercial purposes.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Academic Honesty
+
+This project follows the principles of academic honesty. It was created as part of the learning process and to demonstrate the adaptation of existing code for educational purposes. For more information, please refer to the [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/) of FreeCodeCamp.
+
+## Usage
+
+To use this code for educational purposes, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install any required dependencies using your preferred package manager.
+3. Explore the codebase to understand the modifications made for TypeScript and React v18 migration.
+4. Experiment with the code and adapt it to your own learning needs.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
