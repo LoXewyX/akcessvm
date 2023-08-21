@@ -45,7 +45,7 @@ const Register = () => {
     };
   });
 
-  const REGISTER_URL = "/register";
+  const REGISTER_URL = "/signup";
 
   useEffect(() => {
     document.title = t("register.title");

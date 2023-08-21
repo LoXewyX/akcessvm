@@ -13,7 +13,7 @@ const Users: React.FC = () => {
   countries.registerLocale(caLocate);
 
   const [lang] = useState(localStorage.getItem("lang")!);
-  const [users, setUsers] = useState<IUser[]>([]); // Specify the type of the state
+  const [users, setUsers] = useState<IUser[]>([]);
   const [search, setSearch] = useState<string>("");
   const axiosPrivate = useAxiosPrivate();
   const navigate = useNavigate();

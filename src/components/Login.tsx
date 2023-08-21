@@ -10,7 +10,7 @@ import useAuth from "../hooks/useAuth";
 import useInput from "../hooks/useInput";
 import useToggle from "../hooks/useToggle";
 
-const LOGIN_URL = "/auth";
+const LOGIN_URL = "/login";
 
 const Login: React.FC = () => {
   const { t } = useTranslation("global");
@@ -145,7 +145,7 @@ const Login: React.FC = () => {
                       id="persist"
                       className="form-check-input me-2"
                       type="checkbox"
-                      onChange={() => toggleCheck}
+                      onChange={() => toggleCheck(!check)}
                       checked={check}
                     />
                     {t("login.trustdev")}

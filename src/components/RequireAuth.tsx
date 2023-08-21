@@ -1,24 +1,22 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
-import useAuth from '../hooks/useAuth';
+import { useLocation, Navigate, Outlet } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 interface RequireAuthProps {
   allowedRoles: number[];
   children?: React.ReactNode;
 }
 
-const RequireAuth: React.FC<RequireAuthProps> = ({ allowedRoles, children }) => {
+const RequireAuth: React.FC<RequireAuthProps> = ({ allowedRoles }) => {
   const { auth } = useAuth();
+  const location = useLocation();
 
-  if (auth?.roles?.some(role => allowedRoles.includes(role))) {
-    return <>{children}</>;
-  }
-
-  if (auth?.accessToken) {
-    return <Navigate to="/unauthorized" replace />;
-  }
-
-  return <Navigate to="/login" replace />;
+  return auth?.roles?.find((role) => allowedRoles?.includes(role)) ? (
+    <Outlet />
+  ) : auth?.user ? (
+    <Navigate to="/unauthorized" state={{ from: location }} replace />
+  ) : (
+    <Navigate to="/login" state={{ from: location }} replace />
+  );
 };
 
 export default RequireAuth;
