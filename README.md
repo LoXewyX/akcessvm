@@ -1,6 +1,6 @@
 # React Protected Routes with Role-Based Authorization (Modified Version)
 
-This project is inspired by the work of [@DaveGrayTeachesCode](https://github.com/DaveGrayTeachesCode) on React Protected Routes and Role-Based Authorization. The original implementation can be found in [this tutorial video](https://www.youtube.com/watch?v=oUZjO00NkhY).
+This project is inspired by the work of [@DaveGrayTeachesCode](https://github.com/gitdagray) on React Protected Routes and Role-Based Authorization. The original implementation can be found in [this tutorial video](https://www.youtube.com/watch?v=oUZjO00NkhY).
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This version of the project extends the original codebase to include TypeScript 
 
 ## Credits
 
-- Original Implementation: [@DaveGrayTeachesCode](https://github.com/DaveGrayTeachesCode)
+- Original Implementation: [@DaveGrayTeachesCode](https://github.com/gitdagray)
 - Source Tutorial: [YouTube Tutorial](https://www.youtube.com/watch?v=oUZjO00NkhY)
 
 ## Purpose
